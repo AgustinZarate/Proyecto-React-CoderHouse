@@ -1,10 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar';
+import NavBar from './components/navBar/NavBar';
+import ListItemContainer from './components/main/ListItemContainer';
 
 function App() {
   return (
-    <NavBar />
+    <div className="container">
+          <NavBar />
+          <ListItemContainer persona="Rocio"/>
+    </div>
+
+    
   );
 }
 

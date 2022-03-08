@@ -1,7 +1,9 @@
 import React from 'react'
+import CartWidget from './cartWidget/CartWidget';
+import './NavBar.css';
 const NavBar = () => {
 return (
-<div className="container">
+<div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -37,9 +39,13 @@ return (
                                 <li><a class="dropdown-item" href="#">Cuadros</a></li>
                             </ul>
                         </li>
+                        <li>
+                        
+                        </li>
                     </ul>
                 </div>
             </div>
+            <CartWidget />
         </nav>
     </header>
 </div>

@@ -6,8 +6,3 @@
 .container {
   max-width: 842px;
 }
-
-.navbar .navbar-collapse {
-  flex-grow: unset;
-
-}
