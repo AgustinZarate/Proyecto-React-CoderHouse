@@ -5,38 +5,38 @@ const NavBar = () => {
 return (
 <div>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+        <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+            <div className='container-fluid'>
 
-                <a class="navbar-brand" href="#">
+                <a className='navbar-brand' href='#'>
                     F&M Sublimaciones
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button className='navbar-toggler' type='button' data-bs-toggle='collapse'
+                    data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false'
+                    aria-label='Toggle navigation'>
+                    <span className='navbar-toggler-icon'></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <div className='collapse navbar-collapse' id='navbarNavDropdown'>
+                    <ul className='navbar-nav'>
+                        <li className='nav-item'>
+                            <a className='nav-link active' aria-current='page' href='#'>Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">¿Quienes Somos?</a>
+                        <li className='nav-item'>
+                            <a className='nav-link' href='#'>¿Quienes Somos?</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Encontranos</a>
+                        <li className='nav-item'>
+                            <a className='nav-link' href='#'>Encontranos</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                        <li className='nav-item dropdown'>
+                            <a className='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' role='button'
+                                data-bs-toggle='dropdown' aria-expanded='false'>
                                 Productos
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Remeras</a></li>
-                                <li><a class="dropdown-item" href="#">Buzos</a></li>
-                                <li><a class="dropdown-item" href="#">Cuadros</a></li>
+                            <ul className='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
+                                <li><a className='dropdown-item' href='#'>Remeras</a></li>
+                                <li><a className='dropdown-item' href='#'>Buzos</a></li>
+                                <li><a className='dropdown-item' href='#'>Cuadros</a></li>
                             </ul>
                         </li>
                         <li>

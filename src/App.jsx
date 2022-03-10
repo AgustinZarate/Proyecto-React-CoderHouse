@@ -1,12 +1,16 @@
 import './App.css';
 import NavBar from './components/navBar/NavBar';
-import ListItemContainer from './components/main/ListItemContainer';
+import ItemListContainer from './components/navBar/ItemListContainer';
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
 
 function App() {
+  const tutora = "Rocio"
+  const card = "Producto"
   return (
     <div className="container">
           <NavBar />
-          <ListItemContainer persona="Rocio"/>
+          <ItemListContainer tutora={tutora} card={card}/>
     </div>
 
     
