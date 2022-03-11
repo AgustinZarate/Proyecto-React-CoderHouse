@@ -2,6 +2,7 @@ import React from 'react'
 import CartWidget from './cartWidget/CartWidget';
 import './NavBar.css';
 const NavBar = () => {
+
 return (
 <div>
     <header>
@@ -9,7 +10,7 @@ return (
             <div className='container-fluid'>
 
                 <a className='navbar-brand' href='#'>
-                    F&M Sublimaciones
+                    Tienda Pokemon
                 </a>
 
                 <button className='navbar-toggler' type='button' data-bs-toggle='collapse'
@@ -26,7 +27,7 @@ return (
                             <a className='nav-link' href='#'>¿Quienes Somos?</a>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link' href='#'>Encontranos</a>
+                            <a className='nav-link' href='#'>Pokedex</a>
                         </li>
                         <li className='nav-item dropdown'>
                             <a className='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' role='button'
@@ -34,8 +35,8 @@ return (
                                 Productos
                             </a>
                             <ul className='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-                                <li><a className='dropdown-item' href='#'>Remeras</a></li>
-                                <li><a className='dropdown-item' href='#'>Buzos</a></li>
+                                <li><a className='dropdown-item' href='#'>Items</a></li>
+                                <li><a className='dropdown-item' href='#'>PokeBall's</a></li>
                                 <li><a className='dropdown-item' href='#'>Cuadros</a></li>
                             </ul>
                         </li>
@@ -46,6 +47,7 @@ return (
                 </div>
             </div>
             <CartWidget />
+            
         </nav>
     </header>
 </div>
