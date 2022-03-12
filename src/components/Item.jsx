@@ -1,11 +1,10 @@
 import React from 'react'
 import ItemCounter from './ItemCounter'
 
-const Item = ({card}) => {
+const Item = ({Producto}) => {
   return (
     <>
-    <div>{card}</div>
-    <ItemCounter stock={10}/>
+    <div>{Producto}</div>
     </>
   )
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 import Item from './Item'
 
-const ItemList = ({card}) => {
+const ItemList = ({Producto}) => {
   return (
       <div>
         <h3>Lista de productos</h3>
-        <Item card={card}/>
+        <Item Producto={Producto}/>
       </div>
 
   )

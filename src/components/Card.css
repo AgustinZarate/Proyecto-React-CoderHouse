@@ -1,0 +1,101 @@
+
+
+.container-card {
+    margin: 0 1rem;
+    position: relative;
+    width: 301px; /* dejar en 300px para que la linea del costado desaparezca */
+    height: 301px;
+    background: #000;
+    box-shadow:10px 25px 45px rgba(0,0,0,0.1);
+    display: flex;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.container-card:hover {
+width: 600px;
+}
+
+.container-card .container-img-card {
+    position: relative;
+    min-width: 300px;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.container-card .container-img-card .pokeball {
+    width: 5rem;
+    max-width: 250px;
+    transition: 0.5s ease-in-out;
+    height: 5rem;
+}
+
+.container-card:hover .container-img-card .pokeball{
+    transform: rotate(-35deg) translateX(-20px);
+}
+
+.container-card .detail-card {
+    position: absolute;
+    left: 0;
+    max-width: 300px; /* No se pierde detalle en la card, pero hace transicion de letras mal / Cabiar el max por min lo corrije pero queda por fuera */
+    height: 100%;
+    background: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.container-card:hover .detail-card {
+left: 300px;
+}
+
+.container-card .detail-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+}
+
+.detail-card h3 {
+    position: relative;
+    bottom: 5px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+.detail-card p {
+    font-size: 0.9rem; /* size perfecto */
+    color: white;
+}
+.detail-card h4 {
+    color: white;
+}
+
+.price-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 100%;
+}
+
+.price-card p {
+    margin-bottom: unset;
+}
