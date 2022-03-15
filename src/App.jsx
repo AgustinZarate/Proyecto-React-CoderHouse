@@ -34,7 +34,6 @@ function App() {
       "descipsion": "Tendrás más posibilidades de atraparlos que con la Superball."
     }
   ]
-  console.table(pokeballs)
   return (
     <div className="container">
           <NavBar />
