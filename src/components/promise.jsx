@@ -24,14 +24,14 @@ let Desarrollo = new Promise ((resolve, reject)=> {
                   "descipsion": "Tendrás más posibilidades de atraparlos que con la Superball."
                 }
               ]
-        )
+        ) 
         reject("No hay nada")
     }, 3000)
 })
 
 Desarrollo.then((result)=> {
     log(result)
-}).catch(err => {
+}).catch((err) => {
     console.log("Error " + err)
 })
 
