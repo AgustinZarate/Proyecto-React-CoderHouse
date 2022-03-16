@@ -4,13 +4,11 @@ import ItemListContainer from './container/ItemListContainer';
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 import Card from './components/Card';
+import promise from './components/promise';
 
 function App() {
   const tutora = "Rocio";
   const Producto = "Producto";
-  const pokeball = "img/pokeball.png";
-  const superball = "img/superball.png";
-  const ultraball = "img/ultraball.png";
   const pokeballs = [
     {
       "nombre": "Pokeball",
@@ -38,6 +36,7 @@ function App() {
     <div className="container">
           <NavBar />
           <ItemListContainer tutora={tutora} Producto={Producto}/>
+          <h3 className='text-center'>Proveniente de componente Card</h3>
           <div className='container-cards'> {/* Para usar grid de bootstrap, colocar el col en Card.jsx y el Row en App.jsx */}
           <Card nombre={pokeballs[0].nombre} imagen={pokeballs[0].imagen} precio={pokeballs[0].precio} stock={pokeballs[0].stock} descipsion={pokeballs[0].descipsion}/>
           <Card nombre={pokeballs[1].nombre} imagen={pokeballs[1].imagen} precio={pokeballs[1].precio} stock={pokeballs[1].stock} descipsion={pokeballs[1].descipsion}/>
