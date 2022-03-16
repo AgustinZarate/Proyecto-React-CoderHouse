@@ -4,13 +4,11 @@ import ItemListContainer from './container/ItemListContainer';
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 import Card from './components/Card';
+import promise from './components/promise';
 
 function App() {
   const tutora = "Rocio";
   const Producto = "Producto";
-  const pokeball = "img/pokeball.png";
-  const superball = "img/superball.png";
-  const ultraball = "img/ultraball.png";
   const pokeballs = [
     {
       "nombre": "Pokeball",
