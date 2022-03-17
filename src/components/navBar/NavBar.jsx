@@ -37,7 +37,7 @@ return (
                             <ul className='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
                                 <li><a className='dropdown-item' href='#'>Items</a></li>
                                 <li><a className='dropdown-item' href='#'>PokeBall's</a></li>
-                                <li><a className='dropdown-item' href='#'>Cuadros</a></li>
+                                <li><a className='dropdown-item' href='#'>MT's</a></li>
                             </ul>
                         </li>
                         <li>
