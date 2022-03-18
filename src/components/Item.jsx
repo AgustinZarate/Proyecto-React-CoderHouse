@@ -1,22 +1,22 @@
 import React from 'react'
 import ItemCounter from './ItemCounter'
 
-const Item = ({nombre, imagen, precio, stock, descipsion}) => {
+const Item = ({item}) => {
   return (
     <>
     <div className='container-card'>{/* Para usar grid de bootstrap, colocar el col en Card.jsx y el Row en App.jsx */}
     <div className="container-img-card">
-        <img className='pokeball' src={imagen} alt="Pokeball" />
+        <img className='pokeball' src={item.imagen} alt="Pokeball" />
     </div>
     <div className="detail-card">
-        <h3>{nombre}</h3>
-        <p>{descipsion}</p>
-        <p>Stock Actual: {stock}</p>
+        <h3>{item.nombre}</h3>
+        <p>{item.descipsion}</p>
+        <p>Stock Actual: {item.stock}</p>
         <div className='price-card'>
             <h4>Price</h4>
-            <p>{precio}$</p>
+            <p>{item.precio}$</p>
         </div>
-        <ItemCounter stock={stock}/>
+        <ItemCounter stock={item.stock}/>
             
     </div>
     </div>
