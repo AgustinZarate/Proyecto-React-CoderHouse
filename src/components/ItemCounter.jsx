@@ -21,7 +21,7 @@ const ItemCounter = ({stock}) => {
     <button onClick={restar} className='btn-restar-producto btn btn-danger mx-2'>-</button>
     </div>
     <button className='btn btn-success m-1 d-flex align-items-center'>
-      Add Cart <CartWidget />
+     Ver Mas
     </button>
 
     </>

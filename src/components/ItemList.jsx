@@ -1,47 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import Item from './Item'
+import {stock} from '../data/stock.jsx'
+
+
 const ItemList = () => {
   const [listaProductos, setListaProductos] = useState([])
   const [loading, setLoading] = useState(true)
 
-  const pokeballs = [
-    {
-      "id": 1,
-      "nombre": "Pokeball",
-      "imagen": "img/pokeball.png",
-      "precio": 100,
-      "stock": 15,
-      "descipsion": "Es la básica, puedes coger a cualquier Pokémon."
-    },
-    {
-      "id": 2,
-      "nombre": "Superball",
-      "imagen": "img/superball.png",
-      "precio": 250,
-      "stock": 10,
-      "descipsion": "Tendrás más posibilidades de atraparlos que con la simple Poké Ball."
-    },
-    {
-      "id": 3,
-      "nombre": "Ultraball",
-      "imagen": "img/ultraball.png",
-      "precio": 500,
-      "stock": 5,
-      "descipsion": "Tendrás más posibilidades de atraparlos que con la Superball."
-    }
-  ]
-
-
-
 const getProducts = new Promise ((resolve, reject)=> {
-  if(pokeballs.length === 0) {
+  if(stock.length === 0) {
     setTimeout(()=>{
       reject( alert('No funciono'))
     }, 5000)
     
   }else{
     setTimeout(()=>{
-      resolve(pokeballs)
+      resolve(stock)
     }, 5000)
   }
 })
