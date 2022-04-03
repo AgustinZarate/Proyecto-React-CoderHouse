@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './ItemCounter.css';
-import CartWidget from './navBar/cartWidget/CartWidget';
 
 const ItemCounter = ({stock}) => {
     const [contador, setContador] = useState(0)

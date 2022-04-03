@@ -11,12 +11,12 @@ const getProducts = new Promise ((resolve, reject)=> {
   if(stock.length === 0) {
     setTimeout(()=>{
       reject( alert('No funciono'))
-    }, 5000)
+    }, 2000)
     
   }else{
     setTimeout(()=>{
       resolve(stock)
-    }, 5000)
+    }, 2000)
   }
 })
 

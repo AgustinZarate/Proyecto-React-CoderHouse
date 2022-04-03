@@ -1,6 +1,6 @@
 import React from 'react'
 import './Card.css';
-import ItemCounter from './ItemCounter'
+import ItemCounter from '../itemCounter/ItemCounter'
 const Card = ({nombre, imagen, precio, stock, descipsion}) => {
   return (
     <>
